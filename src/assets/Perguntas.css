@@ -1,0 +1,135 @@
+
+.perguntas-page {
+    display: flex;
+    padding: 0;
+    width: 100vw; /* Largura agora ocupa 100% da tela */
+    height: 100vh;
+    margin: 0; /* Remove margens */
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins para toda a página */
+}
+
+/* Estilo da sidebar */
+.sidebar {
+    width: 120px; /* Aumenta a largura da sidebar */
+    background-color: #096E5F; /* Verde escuro */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha no topo */
+    padding-top: 20px; /* Espaço do topo */
+}
+
+/* Estilo do botão de três linhas na sidebar */
+.navbar-toggle {
+    background-color: transparent; /* Botão transparente */
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none; /* Remove a borda ao clicar */
+}
+
+/* Estilo do conteúdo principal */
+.content {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px; /* Adiciona margem à direita */
+}
+
+/* Estilo da navbar */
+.navbar {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Lista da navbar */
+.navbar-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens da navbar */
+.navbar-list li {
+    margin-right: 20px;
+}
+
+/* Estilo do header com botão de cadastrar pergunta */
+.header {
+    display: flex;
+    justify-content: center; /* Centralizado */
+    margin-top: 10px;
+    box-shadow: none; /* Remove a sombra */
+}
+
+.header .btn-custom {
+    background-color: #249F8D; /* Verde claro */
+    color: white;
+    font-weight: bold; /* Texto em negrito */
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+}
+
+.table {
+    width: 100%; 
+    margin-top: 10px;
+    border-collapse: collapse; 
+}
+
+.table th, .table td {
+    padding: 8px; 
+    text-align: left;
+    border: none; 
+}
+
+.table th {
+    background-color: white;
+    color: #666;
+    font-weight: bold; 
+    font-size: 1.1rem; 
+}
+
+.table tr:nth-child(even) {
+    background-color: #e0e0e0; 
+}
+
+.table tr:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+.badge {
+    padding: 5px 10px; 
+    border-radius: 10px; 
+}
+
+
+.pagination {
+    margin-top: 20px; 
+}
+
+.page-item {
+    margin: 0 3px; 
+}
+
+.page-link {
+    color: black; 
+    background-color: transparent; 
+    border: none;
+}
+
+.page-link:hover {
+    background-color: #f0f0f0; 
+}
+
+.font-weight-bold {
+    font-weight: bold; 
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #096E5F; 
+    margin: 10px 0; 
+}

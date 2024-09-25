@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.logo{
+    width: 200;
+    height: 200;
+}
+
+.container {
+    display: flex; 
+}
+
+#titulo {
+    font-size: 4em;
+}
+
+.input1 {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px; /* Aumenta o padding para inputs */
+    border-radius: 25px; /* Aumenta a curvatura dos inputs */
+    border: none;
+    background-color: rgb(240, 240, 240);
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    outline: none;
+    margin-bottom: 10px; /* Diminui a margem entre os inputs */
+    font-family: Poppins;
+}
+
+.text {
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+}
+
+.ref1 {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.ref1:hover {
+    text-decoration: underline;
+}
+
+.botão1, .botão3 {
+    background-color: #569A90;
+    color: white;
+    width: 500px; /* Aumenta a largura dos botões */
+    height: 60px; /* Aumenta a altura dos botões */
+    border-radius: 25px; /* Aumenta a curvatura dos botões */
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 20px; /* Aumenta o tamanho da fonte dos botões */
+}
+
+.botão1:hover, .botão3:hover {
+    background-color: #4a857a; 
+}
+
+.div3 {
+    height: 20px;
+}

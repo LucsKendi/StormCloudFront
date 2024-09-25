@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(to bottom, #009B84, #B0D5CD);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: Poppins; /* Define a fonte Poppins para o body */
+}
+
+.container {
+    display: flex; /* Usar flexbox para a centralização dos elementos */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+#titulo {
+    color: white;
+}
+
+.input1 {
+    background-color: white;
+    color: #249F8D; /* Cor do texto dos inputs em verde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Largura fixa para os inputs */
+    padding: 10px; /* Adicionando padding para os inputs */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    border: none; /* Remover a borda padrão */
+    margin-bottom: 20px; /* Margem abaixo dos inputs */
+}
+
+.input2 {
+    border: 2px solid white; /* Borda para o checkbox */
+    width: 20px; /* Largura da checkbox */
+    height: 20px; /* Altura da checkbox */
+    margin-right: 0; /* Remove a margem entre a checkbox e o texto */
+    cursor: pointer;
+}
+
+.text {
+    color: white;
+    display: flex; /* Usar flexbox para alinhar os elementos dentro do label */
+    justify-content: space-between; /* Espaço entre o checkbox e o link */
+    width: 500px; /* Mesma largura dos inputs */
+}
+
+.ref1 {
+    color: white;
+}
+
+.div3 {
+    height: 20px; 
+}
+
+/* Estilos do botão */
+.botão1 {
+    background-color: #096E5F; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    width: 500px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    border-radius: 25px; /* Bordas arredondadas do botão */
+    font-weight: bold; /* Negrito no texto do botão */
+    cursor: pointer; /* Mão ao passar o mouse */
+    margin: 20px 0; /* Margem acima e abaixo do botão */
+}
