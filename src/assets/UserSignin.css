@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden; /* remove a barra de rolagem */
+    overflow: hidden; /*remove a barra de rolagem*/
 }
 
 .container{
@@ -29,6 +29,7 @@ body {
     width: 40%; /* Tamanho da div da esquerda */
     padding: 5%;
     box-sizing: border-box;
+    margin-left: 5%;
 }
 
 .div2 { /* Parte direita só com imagem */
@@ -37,7 +38,7 @@ body {
 } 
 
 .liimg {
-    max-width: 71.5%;
+    max-width: 75.5%;
     object-fit: contain;
     padding: 0;
     width: 900px;
@@ -107,5 +108,4 @@ padding: 0;
 .botão1:hover {
     background-color: #0a7e63;
 }
-
 
