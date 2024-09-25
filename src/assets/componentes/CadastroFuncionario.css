@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 15px; /* Adiciona padding para evitar que os elementos toquem as laterais */
+  padding: 0 15px;
 }
 
 .form-container {
@@ -17,7 +17,7 @@
 
 .equal-height {
   display: flex;
-  align-items: stretch; /* Garante que ambas as colunas tenham a mesma altura */
+  align-items: stretch;
 }
 
 .foto-placeholder {
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 5px; /* Bordas arredondadas para a foto */
+  border-radius: 5px;
 }
 
 .escolher-foto-text {
@@ -46,7 +46,7 @@
   color: #249F8D;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 20px; /* Deixa um espaço entre o título e o conteúdo */
+  margin-bottom: 20px;
 }
 
 .btn-custom {
@@ -61,4 +61,38 @@
 
 .btn-custom:hover {
   background-color: #096E5F;
+}
+
+/* Estilos específicos da página "Editar Funcionário" */
+#edit-title {
+  color: #096E5F;
+}
+
+.btn-save {
+  background-color: #249F8D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+.btn-save:hover {
+  background-color: #096E5F;
+}
+
+.btn-cancel {
+  background-color: #E6E6E6;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.btn-cancel:hover {
+  background-color: #CCCCCC;
 }

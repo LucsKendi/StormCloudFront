@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './funcionarios.css';
-import Header from './header';
-import CadastroFuncionario from './CadastroFuncionario';
+import Header from '../componentes/header';
+import CadastroFuncionario from '../componentes/CadastroFuncionario';
 
 const Funcionários: React.FC = () => {
   const [showModal, setShowModal] = useState(false);

@@ -1,0 +1,99 @@
+/* Ajustes gerais */
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+  
+  .form-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .equal-height {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .foto-placeholder {
+    background-color: #E6F2EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .escolher-foto-text {
+    color: #249F8D;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .input-custom {
+    background-color: #E6F2EF;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #249F8D;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .btn-custom {
+    background-color: #249F8D;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  
+  .btn-custom:hover {
+    background-color: #096E5F;
+  }
+  
+  /* Estilos específicos da página "Editar Funcionário" */
+  #edit-title {
+    color: #096E5F;
+  }
+  
+  .btn-save {
+    background-color: #249F8D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  .btn-save:hover {
+    background-color: #096E5F;
+  }
+  
+  .btn-cancel {
+    background-color: #E6E6E6;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #CCCCCC;
+  }
+  

@@ -1,18 +1,19 @@
 import './App.css'
-import Funcionários from './assets/Funcionários'
-import Equipes from './assets/Equipes'
-import Perguntas from './assets/Perguntas'
-import SignIn from './assets/UserSignIn'
-import CadastroAdmin from './assets/CadastroAdmin'
-import LoginAdmin from './assets/LoginAdmin'
-import RedefinirSenha from './assets/RedefinirSenha'
-import CadastroFuncionario from './assets/CadastroFuncionario'
+import Funcionários from './assets/páginas/Funcionários'
+import Equipes from './assets/páginas/Equipes'
+import Perguntas from './assets/páginas/Perguntas'
+import SignIn from './assets/páginas/UserSignIn'
+import CadastroAdmin from './assets/páginas/CadastroAdmin'
+import LoginAdmin from './assets/páginas/LoginAdmin'
+import RedefinirSenha from './assets/páginas/RedefinirSenha'
+import CadastroFuncionario from './assets/componentes/CadastroFuncionario'
+import MyCarousel from './assets/componentes/Carrossel'
 
 function App() {
 
   return (
       <div>
-       <Perguntas></Perguntas>
+       <Funcionários></Funcionários>
       </div>
   )
 }

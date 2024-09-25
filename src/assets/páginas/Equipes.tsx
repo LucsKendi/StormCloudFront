@@ -1,24 +1,23 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './equipes.css';
-import Header from './header';
+import Header from '../componentes/header';
+import Sidebar from '../componentes/sidebar';
+import MyCarousel from '../componentes/Carrossel';
 
 const Equipes: React.FC = () => {
   return (
     <div className="equipes-page d-flex">
-
-      <div className="sidebar bg-verde-escuro">
-        <button className="navbar-toggle btn text-white">&#9776;</button>
-      </div>
-
+      <Sidebar />
       <div className="content flex-grow-1 p-4">
+        <Header activePage="equipes" />
 
         <div className="d-flex my-3">
-          <button className="btn btn-verde-claro mx-2">Cadastrar</button>
+          <button className="btn btn-verde-claro mx-2">Cadastrar equipe</button>
           <button className="btn btn-verde-claro mx-2">Editar</button>
           <button className="btn btn-verde-claro mx-2">Deletar</button>
         </div>
-        
+
         {/* Divider */}
         <hr className="divider" />
 
@@ -64,35 +63,11 @@ const Equipes: React.FC = () => {
             </tr>
           </tbody>
         </table>
-        
+
         <hr className="divider" />
-        
-        <div className="row mt-4">
-          <div className="col-md-4">
-            <div className="card bg-light text-center card-height">
-              <div className="card-body">
-                <h5 className="card-title">Card 1</h5>
-                <button className="btn btn-verde-claro">Expandir</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card bg-light text-center card-height">
-              <div className="card-body">
-                <h5 className="card-title">Card 2</h5>
-                <button className="btn btn-verde-claro">Expandir</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card bg-light text-center card-height">
-              <div className="card-body">
-                <h5 className="card-title">Card 3</h5>
-                <button className="btn btn-verde-claro">Expandir</button>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        {/* Carousel - Usando o componente separado */}
+        <MyCarousel />
       </div>
     </div>
   );

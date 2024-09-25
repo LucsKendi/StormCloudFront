@@ -154,6 +154,14 @@
   .table tbody tr:nth-child(odd) {
     background-color: #fff;
   }
+
+  .selected-row {
+    background-color: #d3f3f0; /* Cor quando a linha é selecionada */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #e0f7fa; /* Cor ao passar o mouse sobre a linha */
+  }
   
   .content {
     box-shadow: none; 
