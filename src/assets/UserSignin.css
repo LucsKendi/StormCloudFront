@@ -85,7 +85,6 @@ padding: 0;
 .ref1 {
     color: #096e5f; /* Texto "Esqueceu sua senha?" */
     font-size: 18px; /* Aumenta o tamanho da fonte */
-    text-decoration: none;
 }
 
 .ref1:hover {
