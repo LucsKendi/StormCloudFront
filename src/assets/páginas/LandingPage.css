@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem o tamanho dos elementos */
+}
+
+html, body {
+    height: 100%; /* Garante que o body ocupe toda a altura da tela */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    margin-left: -10%; /*tirar margem esquerda que estava dando erro*/
+}
+.container {
+    display: flex;
+    justify-content: center; /*Centraliza as divs horizontalmente*/
+    justify-content: space-between;
+    height: 100vh; /* Altura da tela inteira */
+    width: 100vw;
+    flex-direction: column;
+}
+
+.div1{ /*Primeiro texto*/
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column; /*Empilha os elementos verticalmente*/
+    justify-content: center;/*  Centraliza verticalmente */
+    padding-left: 10%;
+}
+
+#text{
+    text-align:left ;
+    font-size: 22px;
+    font-family: Poppins;
+    max-width: 500px; /* Largura máxima */
+    margin: 0; /* Remove margens para ficar colado no título */
+    padding: 0; /* Remove espaçamentos */
+    
+}
+
+
+
+#titulo {
+    color: #0C9E88;
+    font-family: 'Poppins';
+    font-size: 4em;
+    font-weight: 600;
+    margin: 0; /* Remove margens para colar no texto */
+    text-align: left; /* Centraliza o título */
+}
+.div2{/*Imagem 1*/
+    width: 55%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .img1{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding-top: 5%;
+    padding-right: 5%;
+ }
+
+
+.botão1 { /*não alterar*/
+    background-color: #569A90;
+    color: white;
+    width: 300px;
+    height: 50px; 
+    border-radius: 12px; /* Arredondar um pouco, mas não muito */
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 16px; 
+    font-family: Poppins; /* Definir fonte para Poppins */
+    
+}
+
+.botão1:hover, .botão3:hover { /*não alterar*/
+    background-color: #4a857a; 
+}
+
+.section1, .section2, .section3{
+    width: 100%; /* A largura da seção ocupará todo o espaço */
+    display: flex; 
+    justify-content: space-between; /* As divs dentro de cada seção ficarão lado a lado */
+    align-items: center; /* Centraliza verticalmente as divs dentro de cada seção */
+    margin-bottom: 20px; /* Espaço entre as seções */
+}
+
+#text2{
+    text-align:left ;
+    font-size: 20px;
+    font-family: Poppins;
+    max-width: 600px; /* Largura máxima */
+    margin: 0; /* Remove margens para ficar colado no título */
+    padding: 0; /* Remove espaçamentos */
+    
+}
+
+.div3{/*Imagem2*/
+    width: 55%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div4{/*Segundo texto*/
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column; /*Empilha os elementos verticalmente*/
+    justify-content: center;/*  Centraliza verticalmente */
+    padding-right: 1.5%;
+}
+
+.destaque {
+    color: #0C9E88; /* Cor do texto em destaque*/
+    font-weight: bold; /* O texto em destaque ficará em negrito */
+}
+.destaque-line{
+    color: #0C9E88; /* Cor do texto em destaque*/
+    font-weight: bold; /* O texto em destaque ficará em negrito */
+    text-decoration: underline; /* Adiciona o traço embaixo do texto */
+}
+
+#text3{
+    text-align:left ;
+    font-size: 20px;
+    font-family: Poppins;
+    max-width: 600px;
+    margin-left: 15%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.div5{/*Segundo texto*/
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column; /*Empilha os elementos verticalmente*/
+    justify-content: center;/*  Centraliza verticalmente */
+}
+
+.div6{/*Imagem3*/
+    width: 55%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div7{
+    width: 55%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botão2 { /*não alterar*/ 
+    border: 2px solid #569A90; /* Define a borda com 2px de largura, sólida e na cor #569A90 */
+    color: #569A90; /* Cor do texto */
+    width: 150px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    border-radius: 12px; /* Arredondar os cantos */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Mostrar cursor de mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: 'Poppins', sans-serif; /* Definir fonte para Poppins */
+    background-color: transparent; /* Manter fundo transparente, se desejar */
+
+}
+
+.title{
+    text-align:left ;
+    color: #249F8D;
+    font-family: Poppins;
+    font-size: 30px;
+}

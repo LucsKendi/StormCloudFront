@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #009B84, #B0D5CD);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    overflow: hidden; /* remove a barra de rolagem */
+}
+
+.container {
+    display: flex; /* Usar flexbox para a centralização dos elementos */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.logo{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#titulo {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 3.5em; /* Tamanho do título */
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+.input1 {
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Ajustes para os inputs */
+.input-group {
+    display: flex;
+    gap: 5px; /* Espaçamento entre os inputs */
+    margin-bottom: 0px; /* Diminui o espaçamento vertical entre as fileiras */
+    width: 130%;
+    
+}
+
+/* Proporções de largura diferentes para cada linha */
+.input-group:first-of-type input:nth-child(1) {
+    flex: 2; /* Primeiro input (50%) */
+}
+
+.input-group:first-of-type input:nth-child(2) {
+    flex: 2; /* Segundo input (50%) */
+}
+
+.input-group:nth-of-type(2) input:nth-child(1) {
+    flex: 3; /* Primeiro input menor (25%) */
+}
+
+.input-group:nth-of-type(2) input:nth-child(2) {
+    flex: 2; /* Segundo input mais largo (75%) */
+}
+
+.input-group:nth-of-type(3) input:nth-child(1) {
+    flex: 2; /* Primeiro input mais largo (75%) */
+}
+
+.input-group:nth-of-type(3) input:nth-child(2) {
+    flex: 2; /* Segundo input menor (25%) */
+}
+
+.text {
+    color: white; /* Lembre-se de mim em branco */
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Centralizar o checkbox e o texto */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input2 {
+    border: 2px solid #EAEAEA;
+    background-color:#EAEAEA;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.input2:checked::after {
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.botão1:hover {
+    background-color: #0a7e63;
+}

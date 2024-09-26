@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #009B84, #B0D5CD);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    overflow: hidden; /*  remove a barra de rolagem */
+}
+
+.container {
+    display: flex; /* Usar flexbox para a centralização dos elementos */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.logo{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#titulo {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 3.5em; /* Tamanho do título */
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+.input1 {
+    border-radius: 10px; 
+    padding-bottom: 2%;
+}
+
+/* Estilos do botão */
+.botão3 {
+    background-color: #096E5F; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    width: 500px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    border-radius: 12px; /* Bordas arredondadas do botão */
+    font-weight: bold; /* Negrito no texto do botão */
+    cursor: pointer; /* Mão ao passar o mouse */
+    margin: 10px 0; /* Margem acima e abaixo do botão */
+}

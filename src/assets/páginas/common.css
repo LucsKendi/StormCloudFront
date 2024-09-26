@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+}
+
+.input1 { /* Caixas de texto de todas as paginas - não alterar*/
+    max-width: 500px;
+    width: 100%;
+    padding: 12px; /* Diminuir o padding para deixar o input menor */
+    border-radius: 12px; /* Arredondar um pouco, mas não muito */
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px; /* Diminuir a margem entre os inputs */
+    height: auto;
+    font-family: Poppins;
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    min-height: 40px; /* Garante uma altura mínima suficiente */
+    line-height: 1.5; /* Ajusta o espaçamento vertical entre as letras */
+    color: #096e5f;
+    font-weight: 600;
+
+}
+
+::placeholder {
+    color: #8EBDB6; /* Cor desejada */
+    opacity: 1; /* Garante que a opacidade seja 100% */
+}
+
+.logo{/*Logo de todas as páginas, não alterar*/
+    margin-top: 4%;
+    width: 42%;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+}
+
+.input2 { /*não alterar*/
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 4px;
+    position: relative;
+    outline: none;
+}
+
+.input2:checked { /*não alterar*/
+    background-color: #569A90;
+    border-color: #569A90;
+}
+
+.input2:checked::after { /*não alterar*/
+    content: "✔"; 
+    color: white;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    line-height: 20px; 
+}
+
+.text { /*não alterar*/
+    font-size: 18px;
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+}
+
+.ref1 {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.ref1:hover {
+    text-decoration: underline;
+}
+
+.botão1, .botão3 { /*não alterar*/
+    background-color: #569A90;
+    color: white;
+    width: 400px;
+    height: 50px; 
+    border-radius: 12px; /* Arredondar um pouco, mas não muito */
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 16px; 
+    font-family: Poppins; /* Definir fonte para Poppins */
+    
+}
+
+.botão1:hover, .botão3:hover { /*não alterar*/
+    background-color: #4a857a; 
+}
+
