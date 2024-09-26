@@ -29,10 +29,14 @@
   text-align: center; 
 }
 
+.nav-link:hover {
+  text-decoration: underline; 
+}
 
 .active-link {
   border-bottom: 2px solid white; 
 }
+
 
 .logout-button {
   margin-top: auto; 
