@@ -1,7 +1,7 @@
 .header {
   padding: 20px;
   background-color: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra menos difusa */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   text-align: center; 
   position: relative; 
 }
@@ -19,37 +19,48 @@
 
 .nav li a {
   text-decoration: none;
-  color: #249F8D;
   font-weight: bold;
   font-size: 24px; 
   position: relative;
 }
 
-.nav li a::after {
+.active a {
+  color: #249F8D; 
+}
+
+.active a::after {
   content: "";
   position: absolute;
-  width: 0;
-  height: 3px; /* Aumenta a altura do sublinhado */
+  width: 100%; 
+  height: 3px;
   display: block;
   margin-top: 5px;
-  left: 50%; /* Centraliza o sublinhado */
-  background: #249F8D; /* Cor do sublinhado */
-  transition: width 0.3s ease, left 0.3s ease; /* Adiciona transição */
-}
-
-.nav li a:hover::after {
-  width: 100%; 
-  left: 0; /* Reseta a posição do sublinhado */
-}
-
-.active a {
-  color: #249F8D; /* Cor ativa para a página atual */
+  left: 0;
+  background: #249F8D; 
 }
 
 .inactive a {
-  color: black; /* Cor preta para as páginas que não estão ativas */
+  color: black; 
 }
 
 .inactive a:hover {
   color: #249F8D; 
+}
+
+.inactive a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  left: 50%;
+  background: transparent; 
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.inactive a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #249F8D; 
 }
