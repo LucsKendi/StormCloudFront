@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ activePage }) => {
             <a href="#">Home</a>
           </li>
           <li className={activePage === "CadastroAdmin" ? styles.active : styles.inactive}>
-            <a href="#">Funcionários</a>
+            <a href="#">Cadastro</a>
           </li>
 
           
