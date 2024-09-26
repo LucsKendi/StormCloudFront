@@ -135,11 +135,13 @@
     background-color: #f1f1f1;
     font-weight: bold; 
     font-size: 20px; 
+    text-align: center;
   }
   
   .table td {
     font-weight: normal; 
     padding: 15px 10px; 
+    text-align: center;
   }
   
   
