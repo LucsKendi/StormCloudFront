@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './sidebar.css';
 
 interface SidebarProps {
-  activePage: string; // Propriedade para identificar a página ativa
+  activePage: string; 
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ activePage }) => {
@@ -49,7 +49,6 @@ const Sidebar: React.FC<SidebarProps> = ({ activePage }) => {
         </nav>
       )}
       
-      {/* Botão de logout aparece somente se a sidebar estiver expandida */}
       {isExpanded && (
         <button className="btn btn-outline-light mt-auto logout-button">Logout</button>
       )}
