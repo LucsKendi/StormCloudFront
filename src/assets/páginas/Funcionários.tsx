@@ -6,7 +6,8 @@ import CadastroFuncionario from '../componentes/CadastroFuncionario';
 
 const Funcionários: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
-  const [funcionarios, setFuncionarios] = useState([
+  const [selectedFuncionario, setSelectedFuncionario] = useState<any | null>(null);
+  const [funcionarios, setFuncionarios] = useState<any[]>([
     { nome: 'Maria Silva', email: 'maria@exemplo.com', equipe: 'Equipe A', supervisor: 'Supervisor A', setor: 'Administração', foto: null },
   ]);
 
@@ -16,11 +17,23 @@ const Funcionários: React.FC = () => {
 
   const handleCloseModal = () => {
     setShowModal(false);
+    setSelectedFuncionario(null); // Limpa o funcionário selecionado
   };
 
   const handleCadastrarFuncionario = (novoFuncionario: any) => {
-    setFuncionarios([...funcionarios, novoFuncionario]);
+    if (selectedFuncionario) {
+      // Atualiza o funcionário existente
+      setFuncionarios(funcionarios.map(func => (func.nome === selectedFuncionario.nome ? novoFuncionario : func)));
+    } else {
+      // Adiciona um novo funcionário
+      setFuncionarios([...funcionarios, novoFuncionario]);
+    }
     handleCloseModal();
+  };
+
+  const handleEditFuncionario = (funcionario: any) => {
+    setSelectedFuncionario(funcionario); // Define o funcionário selecionado
+    setShowModal(true); // Abre o modal
   };
 
   return (
@@ -35,7 +48,6 @@ const Funcionários: React.FC = () => {
         <div className="header">
           <div className="action-buttons">
             <button className="btn btn-custom" onClick={handleOpenModal}>Cadastrar</button>
-            <button className="btn btn-custom">Editar</button>
             <button className="btn btn-custom">Deletar</button>
           </div>
           <input type="text" className="form-control search-bar" placeholder="Buscar..." />
@@ -52,6 +64,8 @@ const Funcionários: React.FC = () => {
               <th>Equipe</th>
               <th>Supervisor</th>
               <th>Setor</th>
+              <th>CPF</th>
+              <th>Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -63,6 +77,10 @@ const Funcionários: React.FC = () => {
                 <td>{func.equipe}</td>
                 <td>{func.supervisor}</td>
                 <td>{func.setor}</td>
+                <td>{func.cpf}</td>
+                <td>
+                  <button className="btn btn-custom" onClick={() => handleEditFuncionario(func)}>Editar</button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -73,7 +91,10 @@ const Funcionários: React.FC = () => {
         <div className="modal-overlay">
           <div className="modal-content">
             <button className="close-modal" onClick={handleCloseModal}>X</button>
-            <CadastroFuncionario onCadastrar={handleCadastrarFuncionario} />
+            <CadastroFuncionario 
+              onCadastrar={handleCadastrarFuncionario} 
+              funcionario={selectedFuncionario} // Passa o funcionário selecionado para edição
+            />
           </div>
         </div>
       )}

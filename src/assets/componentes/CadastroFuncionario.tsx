@@ -1,19 +1,32 @@
-import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Importação do CSS do Bootstrap
-import './CadastroFuncionario.css'; // Estilos personalizados
+import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './CadastroFuncionario.css';
 
 interface CadastroFuncionarioProps {
   onCadastrar: (novoFuncionario: any) => void;
+  funcionario?: any; // Prop opcional para edição
 }
 
-const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }) => {
+const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar, funcionario }) => {
   const [foto, setFoto] = useState<string | null>(null);
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [equipe, setEquipe] = useState('');
   const [supervisor, setSupervisor] = useState('');
   const [setor, setSetor] = useState('');
-  const [cpf, setCpf] = useState(''); // Novo estado para CPF
+  const [cpf, setCpf] = useState('');
+
+  useEffect(() => {
+    if (funcionario) {
+      setNome(funcionario.nome);
+      setEmail(funcionario.email);
+      setEquipe(funcionario.equipe);
+      setSupervisor(funcionario.supervisor);
+      setSetor(funcionario.setor);
+      setCpf(funcionario.cpf);
+      setFoto(funcionario.foto);
+    }
+  }, [funcionario]);
 
   const handleFotoChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
@@ -33,7 +46,7 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
       equipe,
       supervisor,
       setor,
-      cpf, // Adicionando CPF ao cadastro
+      cpf,
       foto,
     };
     onCadastrar(novoFuncionario); // Chama a função de cadastro no componente pai
@@ -42,10 +55,9 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
   return (
     <div className="container-center">
       <div className="form-container">
-        <h2 className="form-title">Cadastrar</h2>
+        <h2 className="form-title">{funcionario ? 'Editar' : 'Cadastrar'}</h2>
         <form onSubmit={handleSubmit}>
           <div className="row equal-height">
-            {/* Coluna para Foto */}
             <div className="col-md-4 d-flex flex-column align-items-center justify-content-center">
               <div className="foto-placeholder">
                 {foto ? (
@@ -66,7 +78,6 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
               />
             </div>
 
-            {/* Coluna para os Inputs */}
             <div className="col-md-8 d-flex flex-column justify-content-between">
               <div className="row">
                 <div className="col-md-12 mb-3">
@@ -76,6 +87,7 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
                     placeholder="Nome Completo"
                     value={nome}
                     onChange={(e) => setNome(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -86,6 +98,7 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -94,6 +107,7 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
                     className="form-control input-custom"
                     value={equipe}
                     onChange={(e) => setEquipe(e.target.value)}
+                    required
                   >
                     <option>Equipe</option>
                     <option>Equipe A</option>
@@ -106,6 +120,7 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
                     className="form-control input-custom"
                     value={supervisor}
                     onChange={(e) => setSupervisor(e.target.value)}
+                    required
                   >
                     <option>Supervisor</option>
                     <option>Supervisor 1</option>
@@ -120,6 +135,7 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
                     placeholder="Setor"
                     value={setor}
                     onChange={(e) => setSetor(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -130,6 +146,7 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
                     placeholder="CPF"
                     value={cpf}
                     onChange={(e) => setCpf(e.target.value)}
+                    required
                   />
                 </div>
               </div>
@@ -137,7 +154,7 @@ const CadastroFuncionario: React.FC<CadastroFuncionarioProps> = ({ onCadastrar }
           </div>
 
           <div className="text-center mt-4">
-            <button type="submit" className="btn btn-custom">Cadastrar</button>
+            <button type="submit" className="btn btn-custom">{funcionario ? 'Salvar' : 'Cadastrar'}</button>
           </div>
         </form>
       </div>
