@@ -7,35 +7,53 @@
 .btn-verde-claro {
   background-color: #249F8D;
   color: white;
-  border-radius: 12px;
-  padding: 12px 30px;
-  font-size: 1.1rem;
-  margin: 0 10px;
+  padding: 12px 28px;
+  font-size: 16px;
   font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .btn-verde-claro:hover {
-  background-color: #1e897a;
+  background-color: #1e7a69; /* Cor ao passar o mouse */
+  color: black; 
+}
+
+.btn-custom {
+  background-color: #249F8D;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.btn-custom:hover {
+  background-color: #1e7a69; /* Cor ao passar o mouse */
+  color: black; 
 }
 
 .divider {
   border-top: 2px solid #ccc;
 }
 
-/* Tabela */
 .table {
   width: 100%;
   margin-top: 20px;
 }
 
 .table th, .table td {
-  padding: 20px;
-  text-align: left;
-  font-size: 1.1rem;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .table th {
   font-weight: bold;
+  background-color: #f0f0f0; /* Cinza claro */
 }
 
 .table tbody tr:nth-child(even) {
@@ -55,3 +73,4 @@
   border-radius: 5px;
   color: white;
 }
+
