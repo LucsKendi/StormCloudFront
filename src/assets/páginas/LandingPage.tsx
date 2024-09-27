@@ -16,13 +16,13 @@ const LandPage = () => {
                 </div>
 
                 <div className='div2'>
-                    <img className='img1' src="src/assets/Rectangle 79.png" alt="*" />
+                    <img className='img1' src="Rectangle 79.png" alt="*" />
                 </div>
             </section>
 
             <section className='section2'>
                 <div className='div3'>
-                    <img className='img' src="src/assets/Rectangle 82.png" alt="*" />
+                    <img className='img' src="Rectangle 82.png" alt="*" />
                 </div>
 
                 <div className='div4'>
@@ -38,18 +38,18 @@ const LandPage = () => {
                 </div>
 
                 <div className='div6'>
-                    <img className='img3' src="src/assets/Rectangle 84.png" alt="*" />
+                    <img className='img3' src="Rectangle 84.png" alt="*" />
                 </div>
             </section>
 
             <section className='section4'>
                 <div className='div7'>
-                    <img className='img4' src="src/assets/Rectangle 83.png" alt="*" />
+                    <img className='img4' src="Rectangle 83.png" alt="*" />
                 </div>
 
             </section>
 
-            <img className='fundo' src="src/assets/Vector 2.png" alt="" />
+            <img className='fundo' src="Vector 2.png" alt="" />
         </div>
         </>
     )
