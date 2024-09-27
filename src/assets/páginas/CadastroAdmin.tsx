@@ -4,7 +4,7 @@ import './common.css';
 const CadastroAdmin = () => {
     return (
         <div className="container">
-            <img src="src\assets\logo.png" alt="" className='logo'/>
+            <img src="logo.png" alt="" className='logo'/>
             <h1 id="titulo">CloudStorm</h1>
 
             <div className="input-group">

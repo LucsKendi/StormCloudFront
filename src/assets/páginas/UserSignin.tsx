@@ -5,7 +5,7 @@ const SignIn = () => {
     return (
         <div className='container'>
             <div className='div1'>
-                <img className='logo' src="src\assets\logo.png" alt=""/>
+                <img className='logo' src="logo.png" alt=""/>
                 <h1 id='titulo'>CloudStorm</h1>
                
                 <input
@@ -34,7 +34,7 @@ const SignIn = () => {
             </div>
 
             <div className='div2'>
-                <img className='liimg' src="src/assets/Rectangle 28.png" alt="Imagem adicional" />
+                <img className='liimg' src="Rectangle 28.png" alt="Imagem adicional" />
             </div>
         </div>
     )

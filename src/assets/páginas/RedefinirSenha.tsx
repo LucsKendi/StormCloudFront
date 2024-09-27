@@ -4,7 +4,7 @@ import './common.css';
 const RedefinirSenha = () => {
     return (
         <div className="container"> {/* Adicionando a classe container */}
-            <img src="src\assets\logo.png" alt="" className='logo'/>
+            <img src="logo.png" alt="" className='logo'/>
             <h1 id="titulo">CloudStorm</h1>
             <input
                 className="input1"

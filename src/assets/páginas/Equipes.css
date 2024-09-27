@@ -48,6 +48,7 @@
 .table th, .table td {
   padding: 15px 10px;
   text-align: center;
+  vertical-align: middle;
   font-size: 1rem;
 }
 
@@ -70,6 +71,11 @@
 
 .badge {
   padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+
   border-radius: 5px;
   color: white;
 }
