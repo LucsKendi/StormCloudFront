@@ -5,7 +5,7 @@ const LoginAdmin = () => {
     return (
         <div className="container"> {/* Contêiner para centralização */}
 
-            <img src="src\assets\logo.png" alt="" className='logo'/>
+            <img src="logo.png" alt="" className='logo'/>
 
             <h1 id="titulo">CloudStorm</h1>
 
