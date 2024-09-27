@@ -7,7 +7,7 @@
 html, body {
     height: 100%; /* Garante que o body ocupe toda a altura da tela */
     overflow-x: hidden; /* Impede rolagem horizontal */
-    margin-left: -10%; /*tirar margem esquerda que estava dando erro*/
+    position: relative;
 }
 .container {
     display: flex;
@@ -180,4 +180,56 @@ html, body {
     color: #249F8D;
     font-family: Poppins;
     font-size: 30px;
+}
+
+.land-page-square-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 10%;
+    padding-bottom: 20%;
+}
+
+.land-page-squares {
+    width: 400px;
+    height: 200px;
+    background-color: #b0d5cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.land-page-squares > p {
+    color: white;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.vector-wave-end-container {
+    max-height: 60%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 375vh;
+}
+
+.vector-wave {
+    position: absolute;
+    width: 123%;
+    z-index: -1;
+    margin-left: -22%;
+}
+
+.vector-wave-position2 {
+    top: 193vh;
+}
+
+.vector-wave-position {
+    top: 53vh;
+}
+
+.vector-wave-position3 {
+    position: relative !important;
 }
