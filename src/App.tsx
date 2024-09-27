@@ -8,12 +8,13 @@ import LoginAdmin from './assets/páginas/LoginAdmin'
 import RedefinirSenha from './assets/páginas/RedefinirSenha'
 import CadastroFuncionario from './assets/componentes/CadastroFuncionario'
 import MyCarousel from './assets/componentes/Carrossel'
+import LandPage from './assets/páginas/LandingPage'
 
 function App() {
 
   return (
       <div>
-       <Funcionários></Funcionários>
+       <LandPage></LandPage>
       </div>
   )
 }
