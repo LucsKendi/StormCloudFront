@@ -7,7 +7,7 @@
 html, body {
     height: 100%; /* Garante que o body ocupe toda a altura da tela */
     overflow-x: hidden; /* Impede rolagem horizontal */
-    margin-left: -10%; /*tirar margem esquerda que estava dando erro*/
+    position: relative;
 }
 .container {
     display: flex;
@@ -16,6 +16,7 @@ html, body {
     height: 100vh; /* Altura da tela inteira */
     width: 100vw;
     flex-direction: column;
+    max-width: none;
 }
 
 .div1{ /*Primeiro texto*/
@@ -35,6 +36,7 @@ html, body {
     max-width: 500px; /* Largura máxima */
     margin: 0; /* Remove margens para ficar colado no título */
     padding: 0; /* Remove espaçamentos */
+    font-weight: 400;
     
 }
 
@@ -97,6 +99,7 @@ html, body {
     max-width: 600px; /* Largura máxima */
     margin: 0; /* Remove margens para ficar colado no título */
     padding: 0; /* Remove espaçamentos */
+    font-weight: 400;
     
 }
 
@@ -135,8 +138,8 @@ html, body {
     margin-left: 15%;
     position: relative;
     z-index: 1;
+    font-weight: 400;
 }
-
 
 .div5{/*Segundo texto*/
     margin: 0;
@@ -180,4 +183,80 @@ html, body {
     color: #249F8D;
     font-family: Poppins;
     font-size: 30px;
+}
+
+.land-page-square-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 10%;
+    padding-bottom: 20%;
+}
+
+.land-page-squares {
+    width: 400px;
+    height: 200px;
+    background-color: #b0d5cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.land-page-squares > p {
+    color: white;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.vector-wave-end-container {
+    max-height: 60%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 150vh;
+}
+
+.vector-wave {
+    position: absolute;
+    width: 123%;
+    z-index: -1;
+    margin-left: -22%;
+}
+
+.vector-wave-position2 {
+    top: 70vh;
+}
+
+.vector-wave-position {
+    top: 23vh;
+}
+
+.vector-wave-position3 {
+    position: relative !important;
+}
+
+@media (max-height: 1400px) {
+
+    .vector-wave {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .vector-wave-end-container {
+        max-height: 60%;
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        top: 280vh;
+    }
+    
+    .vector-wave-position2 {
+        top: 113vh;
+    }
+    
+    .vector-wave-position {
+        top: 1vh;
+    }
 }
